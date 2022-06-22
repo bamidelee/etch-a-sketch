@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border: 1px solid black;
+    display: grid;
+    height: 20em;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 9px 9px 0px rgb(70, 69, 69);
+}
+.flex{
+    width: 60%;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: white;
+   margin-top: 2em;
+   padding-bottom: 3em;
+   border: 1px solid black;
+
+}
+.controls{
+width: 70%;
+margin-left: auto;
+margin-right: auto;
+padding-bottom: 3em;
+padding-left: 5%;
+   
+}
+.item{
+padding: 10px;
+display: inline-block;
+color: black;
+margin: 2px;
+border-radius: 20px;
+}
+
+
+input[type=range]{
+    -webkit-appearance: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color:white ;
+    height: 6px;
+    
+}
+h1{
+    text-align: center;
+    color: black;
+}
+   
+input[type='range']::-webkit-slider-thumb {
+    width: 15px;
+    -webkit-appearance: none;
+    height: 15px;
+    cursor: ew-resize;
+    background: black;
+    border-radius: 15px;
+}
+.rainbow:active{
+    background-color: black;
+    color: white;
+}
+.rainbow{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 50px;
+}
+.clear{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 50px;
+}
+.clear:active{
+    background-color: black;
+    color: white;
+}
