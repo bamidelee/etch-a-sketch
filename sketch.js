@@ -15,6 +15,7 @@ let gridColumn = '';
 
 divPush();
 canvas();
+canvasPro();
 // displaying random colors for each grid
 rainbow.addEventListener('click',(e) =>
 {
@@ -77,6 +78,18 @@ function canvas()
         })
     })
 }
+function canvasPro()
+{
+    const gridItem = document.querySelectorAll('.canvas');
+    gridItem.forEach(grid =>
+    {
+        grid.addEventListener('touchmove', (e) =>
+        {
+            e.target.style.backgroundColor = colorChange;
+        })
+    })
+}
+
 
 //increase number of grid when range input changed
 range.addEventListener('change', (e) =>
@@ -92,6 +105,7 @@ range.addEventListener('change', (e) =>
     container.style.setProperty('grid-template-rows', gridColumn);
     divPush();
     canvas();
+    canvasPro();
 });
 
 //change color when color input changed
@@ -99,6 +113,7 @@ color.addEventListener('change', (e) =>
 {
     colorChange = color.value;
     canvas();
+    canvasPro();
    
 });
 //clear canvas when clear button clicked

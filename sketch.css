@@ -4,18 +4,19 @@
 body{
     margin: 0;
     padding: 0;
+    height: 70vh;
 }
 .container{
     border: 1px solid black;
     display: grid;
-    height: 20em;
+    height: 55vh;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 10px 9px 9px 0px rgb(70, 69, 69);
 }
 .flex{
-    width: 60%;
+    width: 80%;
    margin-left: auto;
    margin-right: auto;
    background-color: white;
@@ -29,7 +30,7 @@ width: 70%;
 margin-left: auto;
 margin-right: auto;
 padding-bottom: 3em;
-padding-left: 5%;
+padding-left: 10%;
    
 }
 .item{
